@@ -128,7 +128,7 @@
 <h3 id="a">a. 下载安装包</h3>
 <p>从 Python 官网下载最新的 Windows 安装包：
 <a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></p>
-<p><img alt="" src="media/image1.png" /></p>
+<p><img alt="" src="../media/image1.png" /></p>
 <h3 id="b">b. 运行安装程序</h3>
 <p>双击下载的安装文件。在安装界面上，请务必勾选以下两个选项：</p>
 <ol>
@@ -136,13 +136,13 @@
 <li><code>Add python.exe to PATH</code> (<strong>重要：</strong> 将 Python 添加到系统路径。这是什么？请看文末拓展A）</li>
 </ol>
 <p>然后点击 <code>Install Now</code>。</p>
-<p><img alt="" src="media/image2.png" /></p>
+<p><img alt="" src="../media/image2.png" /></p>
 <h3 id="c">c. 禁用路径长度限制</h3>
 <p>安装成功后，会看到一个提示界面，选择 <code>Disable path length limit</code>（禁用路径长度限制。为什么要这么做？请看文末拓展B）。</p>
 <h3 id="d">d. 验证安装</h3>
 <p>打开终端（Command Prompt），输入命令 <code>python --version</code>。如果安装成功，终端会显示安装的 Python 版本号（例如 <code>Python 3.13.0</code>）。</p>
 <p><strong>或者</strong>，输入命令 <code>python</code> 会进入 Python 的交互模式（命令行提示符会变成 <code>&gt;&gt;&gt;</code>）。输入 <code>exit()</code> 并按回车可以退出该模式。</p>
-<p><img alt="验证Python安装" src="media/image3.png" /></p>
+<p><img alt="验证Python安装" src="../media/image3.png" /></p>
 <h2 id="2-jupyter-notebook">2. Jupyter Notebook 安装</h2>
 <h3 id="a-notebook">a. 安装 Notebook</h3>
 <p>打开终端，输入命令 <code>pip install notebook</code>。（这个命令什么意思？请看文末拓展C）。</p>
@@ -151,10 +151,10 @@
 <p>这个命令会启动 Jupyter Notebook 服务，并自动在你的默认浏览器中打开其界面。此时，浏览器中显示的是你<strong>启动终端时所在的那个目录</strong>的文件列表（图中例子是在C盘用户目录下，但实际路径取决于你在哪里执行的命令）。</p>
 <p>你可以在当前目录下创建一个新文件夹来存放实验文件。在文件列表空白处右键即可创建新文件夹，然后双击进入。</p>
 <p><strong>重要：</strong> 运行 Jupyter Notebook 的那个终端窗口必须保持打开状态，它是 Jupyter 的服务器。关闭该终端窗口会同时关闭 Jupyter 服务。</p>
-<p><img alt="" src="media/image4.png" /></p>
+<p><img alt="" src="../media/image4.png" /></p>
 <h3 id="c-notebook">c. 创建 Notebook</h3>
 <p>进入文件夹后，点击右上角的 <code>New</code> 按钮，选择 <code>Python 3 (ipykernel)</code> 来创建一个新的 Jupyter Notebook 文件。（什么是 kernel？请看文末拓展D）</p>
-<p><img alt="选择 Kernel" src="media/image5.png" /></p>
+<p><img alt="选择 Kernel" src="../media/image5.png" /></p>
 <h3 id="d_1">d. 完成！</h3>
 <p>好了！你已经成功搭建好了 Jupyter Notebook！运行一个简单程序试试看吧！</p>
 <pre><code class="language-python">print('Hello World!')
@@ -163,7 +163,7 @@ x=3
 x+=3
 print(x)
 </code></pre>
-<p><img alt="" src="media/image6.png" /></p>
+<p><img alt="" src="../media/image6.png" /></p>
 <h2 id="3-numpy">3. NumPy 库安装</h2>
 <p>Python 本身功能强大，但它的更多能力来自于丰富的第三方库（也称为“包”），这些库需要额外安装。在 Lab 3 和 4 中，我们会用到 <code>numpy</code> 库。</p>
 <h3 id="a-numpy">a. 安装 NumPy</h3>
@@ -183,7 +183,7 @@ print(y)
 x_dot_y = numpy.matmul(x, y) # do dot multiplication
 print(x_dot_y)
 </code></pre>
-<p><img alt="" src="media/image7.png" /></p>
+<p><img alt="" src="../media/image7.png" /></p>
 <h2 id="_1">拓展阅读</h2>
 <h3 id="a-path">拓展A：什么是 PATH？为什么要勾选？</h3>
 <p>PATH 可以理解为电脑的“程序通讯录”或“地址簿”。当我们不将 <code>python.exe</code> 加入 PATH 时，电脑就不知道去哪个文件夹找这个程序。当你在终端输入 <code>python</code> 时，电脑就会报错“找不到命令”。将它加入 PATH，就相当于把 Python 的地址告诉了电脑，这样你在终端的任何位置都能快速找到并运行它。</p>
