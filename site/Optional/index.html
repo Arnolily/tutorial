@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Optional - Tutorial For UESTC3036</title>
+    <title>Anaconda and VSCode 安装指南 - Tutorial For UESTC3036</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Optional";
+        var mkdocs_page_name = "Anaconda and VSCode \u5b89\u88c5\u6307\u5357";
         var mkdocs_page_input_path = "Optional.md";
         var mkdocs_page_url = null;
       </script>
@@ -40,14 +40,12 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">安装路线选择</a>
+                <li class="toctree-l1"><a class="reference internal" href="..">前言</a>
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Optional</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Anaconda and VSCode 安装指南</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_1">前言</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#anaconda-tutorial">Anaconda Tutorial</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#a-anaconda">a. 安装 Anaconda</a>
@@ -87,7 +85,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Optional</li>
+      <li class="breadcrumb-item active">Anaconda and VSCode 安装指南</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -96,9 +94,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="optional">Optional</h1>
-<h2 id="_1">前言</h2>
-<p>欢迎来到可选进阶教程部分。本节将介绍两款功能更强大、也更实用的工具：<strong>Anaconda 环境管理器</strong>和 <strong>VSCode 集成开发环境</strong>。虽然它们的初始设置稍复杂，但能极大地提升你的开发效率和管理能力。本节分为两部分：</p>
+                <h1 id="anaconda-and-vscode">Anaconda and VSCode 安装指南</h1>
+<p><strong>前言</strong>: 欢迎来到可选进阶教程部分。本节将介绍两款功能更强大、也更实用的工具：<strong>Anaconda 环境管理器</strong>和 <strong>VSCode 集成开发环境</strong>。虽然它们的初始设置稍复杂，但能极大地提升你的开发效率和管理能力。本节分为两部分：</p>
 <ul>
 <li>
 <p><strong>Anaconda 部分</strong>：介绍如何使用 Conda 环境管理器来创建和管理独立的项目环境。</p>
@@ -150,7 +147,7 @@ conda create --name your_env_name</code></p>
 <pre><code class="language-bash">conda activate your_env_name
 </code></pre>
 <p>激活后，请注意观察命令行提示符的开头，此时应显示你当前所在环境的名称（在本教程示例中为 (arnold)）。</p>
-<p><img alt="image-20250914214433148" src="\media\image-20250914214433148.png" /></p>
+<p><img alt="image-20250914214433148" src="..\media\image-20250914214433148.png" /></p>
 <p>新创建的环境初始为空。接下来，为你的项目安装特定版本的 Python：</p>
 <pre><code class="language-bash">conda install python
 </code></pre>
@@ -178,15 +175,15 @@ conda create --name your_env_name</code></p>
 </ul>
 </li>
 </ol>
-<p><img alt="image-20250914222826984" src="\media\image-20250914222826984.png" /></p>
+<p><img alt="image-20250914222826984" src="..\media\image-20250914222826984.png" /></p>
 <h3 id="b-vscodejupyter-notebook">b. 在vscode中使用Jupyter notebook</h3>
 <p>为了让 VSCode 正确使用你创建的 Anaconda 环境，你需要为其设置正确的 Python 解释器。</p>
 <ol>
 <li>创建新的jupyter notebook文件（文件名以.ipynb结尾）。</li>
 <li>点击右上角<code>Select Kernel</code>，然后点击<code>Select Python Environment</code>，选择我们刚创建好的环境。我们可以看到，使用Anaconda创建的环境会被标注为<code>Conda Env</code>，而如果不使用Anaconda，而是直接安装python和库的话，会被标注为<code>Global Env</code>。如果大家跟着基础教程走，而没有安装Anaconda，则选择<code>Global Env</code>。<strong>注：</strong>Kernel 就是运行代码的引擎，这里我们要选择刚刚在 Anaconda 里创建好的那个环境作为引擎。</li>
 </ol>
-<p><img alt="image-20250914223213296" src="\media\image-20250914223213296.png" />
-<img alt="image-20250914223709420" src="\media\image-20250914223709420.png" /></p>
+<p><img alt="image-20250914223213296" src="..\media\image-20250914223213296.png" />
+<img alt="image-20250914223709420" src="..\media\image-20250914223709420.png" /></p>
 <ol>
 <li>
 <p>选择完Kernel之后，Jupyter就知道你在写的是Python语言了，语法高亮就会显示出来了。</p>
@@ -195,12 +192,12 @@ conda create --name your_env_name</code></p>
 <p>现在，你就可以在代码单元（Cell）中编写代码了。将光标置于某个 Cell 中，点击左侧的 <strong>运行</strong> 三角图标。运行结果会直接显示在 Cell 下方。</p>
 </li>
 </ol>
-<p><img alt="image-20250914224246827" src="C:\Users\Lab\AppData\Roaming\Typora\typora-user-images\image-20250914224246827.png" /></p>
+<p><img alt="image-20250914224246827" src="..\media\image-20250914224246827.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="安装路线选择"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral float-left" title="前言"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/" class="btn btn-neutral float-right" title="Python and Jupyter Notebook 安装指南">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 

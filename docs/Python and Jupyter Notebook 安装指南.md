@@ -8,7 +8,7 @@
 从 Python 官网下载最新的 Windows 安装包：
 [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
 
-![](media/image1.png)
+![](../media/image1.png)
 
 ### b. 运行安装程序
 双击下载的安装文件。在安装界面上，请务必勾选以下两个选项：
@@ -18,7 +18,7 @@
 
 然后点击 `Install Now`。
 
-![](media/image2.png)
+![](../media/image2.png)
 
 ### c. 禁用路径长度限制
 安装成功后，会看到一个提示界面，选择 `Disable path length limit`（禁用路径长度限制。为什么要这么做？请看文末拓展B）。
@@ -28,7 +28,7 @@
 
 **或者**，输入命令 `python` 会进入 Python 的交互模式（命令行提示符会变成 `>>>`）。输入 `exit()` 并按回车可以退出该模式。
 
-![验证Python安装](media/image3.png)
+![验证Python安装](../media/image3.png)
 
 ## 2. Jupyter Notebook 安装
 
@@ -44,12 +44,12 @@
 
 **重要：** 运行 Jupyter Notebook 的那个终端窗口必须保持打开状态，它是 Jupyter 的服务器。关闭该终端窗口会同时关闭 Jupyter 服务。
 
-![](media/image4.png)
+![](../media/image4.png)
 
 ### c. 创建 Notebook
 进入文件夹后，点击右上角的 `New` 按钮，选择 `Python 3 (ipykernel)` 来创建一个新的 Jupyter Notebook 文件。（什么是 kernel？请看文末拓展D）
 
-![选择 Kernel](media/image5.png)
+![选择 Kernel](../media/image5.png)
 
 ### d. 完成！
 好了！你已经成功搭建好了 Jupyter Notebook！运行一个简单程序试试看吧！
@@ -62,7 +62,7 @@ x+=3
 print(x)
 ```
 
-![](media/image6.png)
+![](../media/image6.png)
 
 ## 3. NumPy 库安装
 
@@ -91,7 +91,7 @@ x_dot_y = numpy.matmul(x, y) # do dot multiplication
 print(x_dot_y)
 ```
 
-![](media/image7.png)
+![](../media/image7.png)
 
 ## 拓展阅读
 

@@ -1,8 +1,6 @@
-# Optional
+# Anaconda and VSCode 安装指南
 
-## 前言
-
-欢迎来到可选进阶教程部分。本节将介绍两款功能更强大、也更实用的工具：**Anaconda 环境管理器**和 **VSCode 集成开发环境**。虽然它们的初始设置稍复杂，但能极大地提升你的开发效率和管理能力。本节分为两部分：
+**前言**: 欢迎来到可选进阶教程部分。本节将介绍两款功能更强大、也更实用的工具：**Anaconda 环境管理器**和 **VSCode 集成开发环境**。虽然它们的初始设置稍复杂，但能极大地提升你的开发效率和管理能力。本节分为两部分：
 
 -   **Anaconda 部分**：介绍如何使用 Conda 环境管理器来创建和管理独立的项目环境。
 
@@ -20,13 +18,13 @@ Anaconda 通过**虚拟环境**解决了这一问题。你可以为每个项目�
 2.  下载并运行适用于你操作系统的安装程序。
 3.  在安装过程的 **“Advanced Options”** 步骤中，**建议只勾选最后一项**：`Clear the package cache upon completion`（安装完成后清除包缓存）。这可以帮助节省磁盘空间。
 
-![Anaconda 安装高级选项](media/image-20250914195509285.png)
+![Anaconda 安装高级选项](../media/image-20250914195509285.png)
 
 ### b. 创建环境
 
 1. Anaconda 安装完成后，通过开始菜单打开 **`Anaconda Prompt`**。这是一个专为 Conda 配置的命令行工具。
 
-![Anaconda Prompt](media/image-20250914213721571.png)
+![Anaconda Prompt](../media/image-20250914213721571.png)
 
 2. 在 `Anaconda Prompt` 中，直接输入以下命令：
 
@@ -59,7 +57,7 @@ conda activate your_env_name
 
 激活后，请注意观察命令行提示符的开头，此时应显示你当前所在环境的名称（在本教程示例中为 (arnold)）。
 
-![image-20250914214433148](\media\image-20250914214433148.png)
+![image-20250914214433148](..\media\image-20250914214433148.png)
 
 新创建的环境初始为空。接下来，为你的项目安装特定版本的 Python：
 
@@ -93,7 +91,7 @@ pip install notebook
     -   找到 **Python** 扩展，点击 **Install** 按钮。
     -   同样方式，安装 **Jupyter**。
 
-![image-20250914222826984](\media\image-20250914222826984.png)
+![image-20250914222826984](..\media\image-20250914222826984.png)
 
 ### b. 在vscode中使用Jupyter notebook
 为了让 VSCode 正确使用你创建的 Anaconda 环境，你需要为其设置正确的 Python 解释器。
@@ -101,13 +99,13 @@ pip install notebook
 1.  创建新的jupyter notebook文件（文件名以.ipynb结尾）。
 2.  点击右上角`Select Kernel`，然后点击`Select Python Environment`，选择我们刚创建好的环境。我们可以看到，使用Anaconda创建的环境会被标注为`Conda Env`，而如果不使用Anaconda，而是直接安装python和库的话，会被标注为`Global Env`。如果大家跟着基础教程走，而没有安装Anaconda，则选择`Global Env`。**注：**Kernel 就是运行代码的引擎，这里我们要选择刚刚在 Anaconda 里创建好的那个环境作为引擎。
 
-![image-20250914223213296](\media\image-20250914223213296.png)
-![image-20250914223709420](\media\image-20250914223709420.png)
+![image-20250914223213296](..\media\image-20250914223213296.png)
+![image-20250914223709420](..\media\image-20250914223709420.png)
 
 3. 选择完Kernel之后，Jupyter就知道你在写的是Python语言了，语法高亮就会显示出来了。
    
 4. 现在，你就可以在代码单元（Cell）中编写代码了。将光标置于某个 Cell 中，点击左侧的 **运行** 三角图标。运行结果会直接显示在 Cell 下方。
 
 
-![image-20250914224246827](C:\Users\Lab\AppData\Roaming\Typora\typora-user-images\image-20250914224246827.png)
+![image-20250914224246827](..\media\image-20250914224246827.png)
 
