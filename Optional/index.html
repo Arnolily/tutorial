@@ -122,15 +122,15 @@
 <ol>
 <li>在 <code>Anaconda Prompt</code> 中，直接输入以下命令：</li>
 </ol>
-<p><code>bash
-   conda init</code></p>
+<pre><code>conda init
+</code></pre>
 <p>这个命令会<strong>自动检测</strong>你的系统设置并完成初始化。完成后，<strong>关闭你当前打开的所有终端窗口</strong>（包括这个 Anaconda Prompt）。</p>
 <ol>
-<li>
-<p>在 <code>Anaconda Prompt</code> 中，使用以下命令创建新环境：</p>
-<p><code>bash
-conda create --name your_env_name</code></p>
-</li>
+<li>在 <code>Anaconda Prompt</code> 中，使用以下命令创建新环境：</li>
+</ol>
+<pre><code>conda create --name your_env_name
+</code></pre>
+<ol>
 <li>
 <p>请将 your_env_name 替换为你喜欢的任意环境名称（例如：conda create --name arnold）。</p>
 </li>
@@ -144,7 +144,7 @@ conda create --name your_env_name</code></p>
 <h3 id="c-python">c. 在环境中安装 Python 和所需库</h3>
 <p>首先，必须激活你的新环境，否则后续安装的包将会被安装到默认的 (base) 环境中，从而失去使用独立环境的意义。</p>
 <p>使用以下命令激活环境：</p>
-<pre><code class="language-bash">conda activate your_env_name
+<pre><code>conda activate your_env_name
 </code></pre>
 <p>激活后，请注意观察命令行提示符的开头，此时应显示你当前所在环境的名称（在本教程示例中为 (arnold)）。</p>
 <p><img alt="image-20250914214433148" src="..\media\image-20250914214433148.png" /></p>
