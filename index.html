@@ -1,159 +1,476 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Tutorial For UESTC3036</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "\u524d\u8a00";
-        var mkdocs_page_input_path = "index.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
+    
+      
+        <title>Tutorial For UESTC3036</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+      
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> Tutorial For UESTC3036
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">前言</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_2">路线一：简单直接（推荐给希望快速上手的同学们）</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_3">路线二：专业高效（推荐给希望深入学习的同学）</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_4">选择建议</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="Extra/">拓展阅读</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="Optional/">Anaconda and VSCode 安装指南</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/">Python and Jupyter Notebook 安装指南</a>
-                </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">Tutorial For UESTC3036</a>
+    
+    
+      
+    
+    
+      
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">前言</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="_1">前言</h1>
-<p>同学们好，这是针对UESTC3036课程（AI&amp;ML）的tutorial。在这个tutorial里，我们会带着同学们安装Lab3和Lab4所需的编程工具。</p>
-<p>在开始之前，请先阅读以下内容，选择最适合你的安装方式：</p>
-<h2 id="_2">路线一：简单直接（推荐给希望快速上手的同学们）</h2>
-<ul>
-<li><strong>选择</strong>：<a href="Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/">Python and Jupyter Notebook 安装指南</a></li>
-<li><strong>特点</strong>：安装简单，全局只有一个 Python 环境。适合课程任务不复杂，不想折腾环境的同学。</li>
-<li><strong>缺点</strong>：如果未来需要做不同的项目，或者库版本冲突，管理起来会比较麻烦。</li>
-</ul>
-<h2 id="_3">路线二：专业高效（推荐给希望深入学习的同学）</h2>
-<ul>
-<li><strong>选择</strong>：<a href="Optional/">Anaconda and VSCode 安装指南</a></li>
-<li><strong>特点</strong>：使用 Anaconda 创建独立的虚拟环境，为每个项目提供干净、隔离的空间，彻底解决依赖冲突。配合 VSCode 获得最好的编写和调试体验。</li>
-<li><strong>缺点</strong>：初始设置稍复杂，需要理解"环境"的概念。</li>
-</ul>
-<h2 id="_4">选择建议</h2>
-<p>如果你不确定该选哪个，<strong>我们推荐你先选择路线一</strong>。万事开头难，没必要上来就对自己严格要求，路线二也并不一定让Lab的内容做起来更简单。如果同学们在之后的学习过程中发现遇到了环境问题，或者受不了简单的GUI带来的折磨，可以再选择路线二。</p>
-<blockquote>
-<p>💡 提示：两条路线<strong>并不互斥</strong>，你当然可以选择先走路线一，然后再走路线二。</p>
-</blockquote>
-<p>Written by <a href="https://zhangjiayuan.me">Arnold</a></p>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="Extra/" class="btn btn-neutral float-right" title="拓展阅读">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
 
-  <hr/>
+  
 
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Tutorial For UESTC3036" class="md-header__button md-logo" aria-label="Tutorial For UESTC3036" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tutorial For UESTC3036
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
         </div>
       </div>
-
-    </section>
-
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
   </div>
+</div>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Tutorial For UESTC3036" class="md-nav__button md-logo" aria-label="Tutorial For UESTC3036" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tutorial For UESTC3036
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
     
+      
+      
+  
+  
     
-    
-      <span><a href="Extra/" style="color: #fcfcfc">Next &raquo;</a></span>
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
     
   </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#path-1-simple-and-direct-recommended-for-students-who-want-to-get-started-quickly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path 1: Simple and Direct (Recommended for students who want to get started quickly)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-2-professional-and-efficient-recommended-for-students-who-want-to-learn-more-deeply" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path 2: Professional and Efficient (Recommended for students who want to learn more deeply)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Our Recommendation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python and Jupyter Notebook Installation Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Optional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anaconda and VSCode Installation Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Extra Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#path-1-simple-and-direct-recommended-for-students-who-want-to-get-started-quickly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path 1: Simple and Direct (Recommended for students who want to get started quickly)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-2-professional-and-efficient-recommended-for-students-who-want-to-learn-more-deeply" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path 2: Professional and Efficient (Recommended for students who want to learn more deeply)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Our Recommendation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="introduction">Introduction</h1>
+<p>Hello students, this is a tutorial for the UESTC3036 course (AI &amp; ML). In this tutorial, we will guide you through installing the programming tools needed for Lab 3 and Lab 4.</p>
+<p>Before you start, please read the following and choose the installation method that works best for you:</p>
+<h2 id="path-1-simple-and-direct-recommended-for-students-who-want-to-get-started-quickly">Path 1: Simple and Direct (Recommended for students who want to get started quickly)</h2>
+<ul>
+<li><strong>Choose</strong>: <a href="Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/">Python and Jupyter Notebook Installation Guide</a></li>
+<li><strong>Features</strong>: Simple installation with only one global Python environment. Good for students whose course tasks are not complex and who don't want to deal with environment setups.</li>
+<li><strong>Downsides</strong>: It can be difficult to manage if you need to work on different projects in the future or if you run into library version conflicts.</li>
+</ul>
+<h2 id="path-2-professional-and-efficient-recommended-for-students-who-want-to-learn-more-deeply">Path 2: Professional and Efficient (Recommended for students who want to learn more deeply)</h2>
+<ul>
+<li><strong>Choose</strong>: <a href="Optional/">Anaconda and VSCode Installation Guide</a></li>
+<li><strong>Features</strong>: Use Anaconda to create independent virtual environments. This gives each project a clean, isolated space and completely solves dependency conflicts. Using it with VSCode gives you the best coding and debugging experience.</li>
+<li><strong>Downsides</strong>: The initial setup is a bit more complex, and you need to understand the concept of "environments."</li>
+</ul>
+<h2 id="our-recommendation">Our Recommendation</h2>
+<p>If you're not sure which one to choose, <strong>we recommend starting with Path 1</strong>. Getting started is always the hardest part, so there's no need to be too strict with yourself at the beginning. Path 2 won't necessarily make the lab content any easier. If you run into environment problems later on, or if you get tired of the simple user interface, you can always switch to Path 2.</p>
+<blockquote>
+<p>💡 <strong>Tip</strong>: The two paths are <strong>not mutually exclusive</strong>. You can certainly start with Path 1 and then move to Path 2 later.</p>
+</blockquote>
+<p>Written by <a href="https://zhangjiayuan.me">Arnold</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = ".";</script>
-    <script src="js/theme_extra.js"></script>
-    <script src="js/theme.js"></script>
-      <script src="search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.sections", "navigation.expand"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-10-15 09:00:12.048519+00:00
--->

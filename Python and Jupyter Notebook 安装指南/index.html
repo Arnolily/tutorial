@@ -1,166 +1,775 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Python and Jupyter Notebook 安装指南 - Tutorial For UESTC3036</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Python and Jupyter Notebook \u5b89\u88c5\u6307\u5357";
-        var mkdocs_page_input_path = "Python and Jupyter Notebook \u5b89\u88c5\u6307\u5357.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Optional/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
+    
+      
+        <title>Python and Jupyter Notebook Installation Guide - Tutorial For UESTC3036</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Tutorial For UESTC3036
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">前言</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Extra/">拓展阅读</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Optional/">Anaconda and VSCode 安装指南</a>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Python and Jupyter Notebook 安装指南</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-python">1. Python 安装</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#a">a. 下载安装包</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#b">b. 运行安装程序</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#c">c. 禁用路径长度限制</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#d">d. 验证安装</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-jupyter-notebook">2. Jupyter Notebook 安装</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#a-notebook">a. 安装 Notebook</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#b-notebook">b. 启动 Notebook</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#c-notebook">c. 创建 Notebook</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#d_1">d. 完成！</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#3-numpy">3. NumPy 库安装</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#a-numpy">a. 安装 NumPy</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#b-numpy">b. 使用 NumPy</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#c_1">c. 试试看！</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_1">拓展阅读</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#a-path">拓展A：什么是 PATH？为什么要勾选？</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#b-disable-path-length-limit">拓展B：为什么选择 disable path length limit？</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#cpip-install-notebook">拓展C：pip install notebook 命令什么意思？</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#d-kernel">拓展D：什么是 Kernel？</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                </li>
-              </ul>
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-and-jupyter-notebook-installation-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Tutorial For UESTC3036" class="md-header__button md-logo" aria-label="Tutorial For UESTC3036" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tutorial For UESTC3036
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python and Jupyter Notebook Installation Guide
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Tutorial For UESTC3036</a>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Python and Jupyter Notebook 安装指南</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../zh/Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
               
-                <h1 id="python-and-jupyter-notebook">Python and Jupyter Notebook 安装指南</h1>
-<p><strong>前言：</strong> 在实验3和4中，我们将使用 Python 语言和 Jupyter Notebook 工具。这个教程会手把手带你安装 Python 和 Jupyter Notebook。（本指南目前主要针对 Windows 电脑）</p>
-<h2 id="1-python">1. Python 安装</h2>
-<h3 id="a">a. 下载安装包</h3>
-<p>从 Python 官网下载最新的 Windows 安装包：
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Tutorial For UESTC3036" class="md-nav__button md-logo" aria-label="Tutorial For UESTC3036" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tutorial For UESTC3036
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Python and Jupyter Notebook Installation Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python and Jupyter Notebook Installation Guide
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-python-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Python Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Python Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-download-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Download the Installer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-run-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Run the Installer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-disable-path-length-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Disable Path Length Limit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-verify-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Verify the Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-jupyter-notebook-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Jupyter Notebook Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Jupyter Notebook Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-install-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Install Notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-start-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Start Notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-create-a-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Create a Notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Done!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-numpy-library-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. NumPy Library Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. NumPy Library Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-install-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Install NumPy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-use-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Use NumPy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-try-it-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Try it out!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appendix-a-what-is-path-why-check-the-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix A: What is PATH? Why check the box?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-b-why-choose-to-disable-the-path-length-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix B: Why choose to disable the path length limit?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-c-what-does-the-pip-install-notebook-command-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix C: What does the pip install notebook command mean?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-d-what-is-a-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix D: What is a Kernel?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Optional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anaconda and VSCode Installation Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Extra Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-python-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Python Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Python Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-download-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Download the Installer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-run-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Run the Installer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-disable-path-length-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Disable Path Length Limit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-verify-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Verify the Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-jupyter-notebook-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Jupyter Notebook Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Jupyter Notebook Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-install-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Install Notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-start-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Start Notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-create-a-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Create a Notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Done!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-numpy-library-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. NumPy Library Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. NumPy Library Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-install-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Install NumPy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-use-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Use NumPy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-try-it-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Try it out!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appendix-a-what-is-path-why-check-the-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix A: What is PATH? Why check the box?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-b-why-choose-to-disable-the-path-length-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix B: Why choose to disable the path length limit?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-c-what-does-the-pip-install-notebook-command-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix C: What does the pip install notebook command mean?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-d-what-is-a-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix D: What is a Kernel?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="python-and-jupyter-notebook-installation-guide">Python and Jupyter Notebook Installation Guide</h1>
+<p><strong>Introduction:</strong> In Labs 3 and 4, we will use the Python language and the Jupyter Notebook tool. This tutorial will guide you step-by-step through installing Python and Jupyter Notebook. (This guide is currently focused on Windows computers).</p>
+<h2 id="1-python-installation">1. Python Installation</h2>
+<h3 id="a-download-the-installer">a. Download the Installer</h3>
+<p>Download the latest Windows installer from the official Python website:
 <a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></p>
 <p><img alt="" src="../media/image1.png" /></p>
-<h3 id="b">b. 运行安装程序</h3>
-<p>双击下载的安装文件。在安装界面上，请务必勾选以下两个选项：</p>
+<h3 id="b-run-the-installer">b. Run the Installer</h3>
+<p>Double-click the downloaded installation file. On the installation screen, be sure to check the following two options:</p>
 <ol>
-<li><code>Use admin privileges when installing py.exe</code> （为安装程序授予管理员权限）</li>
-<li><code>Add python.exe to PATH</code> (<strong>重要：</strong> 将 Python 添加到系统路径。这是什么？请看文末拓展A）</li>
+<li><code>Use admin privileges when installing py.exe</code></li>
+<li><code>Add python.exe to PATH</code> (<strong>Important:</strong> Add Python to the system PATH. What is this? See Appendix A at the end.)</li>
 </ol>
-<p>然后点击 <code>Install Now</code>。</p>
+<p>Then click <code>Install Now</code>.</p>
 <p><img alt="" src="../media/image2.png" /></p>
-<h3 id="c">c. 禁用路径长度限制</h3>
-<p>安装成功后，会看到一个提示界面，选择 <code>Disable path length limit</code>（禁用路径长度限制。为什么要这么做？请看文末拓展B）。</p>
-<h3 id="d">d. 验证安装</h3>
-<p>打开终端（Command Prompt），输入命令 <code>python --version</code>。如果安装成功，终端会显示安装的 Python 版本号（例如 <code>Python 3.13.0</code>）。</p>
-<p><strong>或者</strong>，输入命令 <code>python</code> 会进入 Python 的交互模式（命令行提示符会变成 <code>&gt;&gt;&gt;</code>）。输入 <code>exit()</code> 并按回车可以退出该模式。</p>
-<p><img alt="验证Python安装" src="../media/image3.png" /></p>
-<h2 id="2-jupyter-notebook">2. Jupyter Notebook 安装</h2>
-<h3 id="a-notebook">a. 安装 Notebook</h3>
-<p>打开终端，输入命令 <code>pip install notebook</code>。（这个命令什么意思？请看文末拓展C）。</p>
-<h3 id="b-notebook">b. 启动 Notebook</h3>
-<p>等待下载安装完成。安装完成后在终端输入 <code>jupyter notebook</code>。</p>
-<p>这个命令会启动 Jupyter Notebook 服务，并自动在你的默认浏览器中打开其界面。此时，浏览器中显示的是你<strong>启动终端时所在的那个目录</strong>的文件列表（图中例子是在C盘用户目录下，但实际路径取决于你在哪里执行的命令）。</p>
-<p>你可以在当前目录下创建一个新文件夹来存放实验文件。在文件列表空白处右键即可创建新文件夹，然后双击进入。</p>
-<p><strong>重要：</strong> 运行 Jupyter Notebook 的那个终端窗口必须保持打开状态，它是 Jupyter 的服务器。关闭该终端窗口会同时关闭 Jupyter 服务。</p>
+<h3 id="c-disable-path-length-limit">c. Disable Path Length Limit</h3>
+<p>After the installation is successful, you will see a screen with an option to <code>Disable path length limit</code>. Click it. (Why do this? See Appendix B at the end).</p>
+<h3 id="d-verify-the-installation">d. Verify the Installation</h3>
+<p>Open a terminal (Command Prompt) and type the command <code>python --version</code>. If the installation was successful, the terminal will show the installed Python version number (for example, <code>Python 3.13.0</code>).</p>
+<p><strong>Alternatively</strong>, typing the command <code>python</code> will enter Python's interactive mode (the command prompt will change to <code>&gt;&gt;&gt;</code>). You can type <code>exit()</code> and press Enter to leave this mode.</p>
+<p><img alt="Verify Python Installation" src="../media/image3.png" /></p>
+<h2 id="2-jupyter-notebook-installation">2. Jupyter Notebook Installation</h2>
+<h3 id="a-install-notebook">a. Install Notebook</h3>
+<p>Open a terminal and type the command <code>pip install notebook</code>. (What does this command mean? See Appendix C at the end).</p>
+<h3 id="b-start-notebook">b. Start Notebook</h3>
+<p>Wait for the download and installation to finish. Once it's done, type <code>jupyter notebook</code> in the terminal.</p>
+<p>This command starts the Jupyter Notebook service and automatically opens its interface in your default web browser. The file list you see in the browser is from the <strong>directory where you were when you started the terminal</strong> (the example in the image is the user directory on the C drive, but the actual path depends on where you ran the command).</p>
+<p>You can create a new folder in the current directory to store your lab files. Right-click in an empty area of the file list to create a new folder, then double-click to enter it.</p>
+<p><strong>Important:</strong> The terminal window where you ran Jupyter Notebook must stay open. It acts as the server for Jupyter. Closing this terminal window will also shut down the Jupyter service.</p>
 <p><img alt="" src="../media/image4.png" /></p>
-<h3 id="c-notebook">c. 创建 Notebook</h3>
-<p>进入文件夹后，点击右上角的 <code>New</code> 按钮，选择 <code>Python 3 (ipykernel)</code> 来创建一个新的 Jupyter Notebook 文件。（什么是 kernel？请看文末拓展D）</p>
-<p><img alt="选择 Kernel" src="../media/image5.png" /></p>
-<h3 id="d_1">d. 完成！</h3>
-<p>好了！你已经成功搭建好了 Jupyter Notebook！运行一个简单程序试试看吧！</p>
+<h3 id="c-create-a-notebook">c. Create a Notebook</h3>
+<p>After entering the folder, click the <code>New</code> button in the top right corner and select <code>Python 3 (ipykernel)</code> to create a new Jupyter Notebook file. (What is a kernel? See Appendix D at the end).</p>
+<p><img alt="Select Kernel" src="../media/image5.png" /></p>
+<h3 id="d-done">d. Done!</h3>
+<p>That's it! You have successfully set up Jupyter Notebook! Try running a simple program to test it.</p>
 <pre><code class="language-python">print('Hello World!')
 
 x=3
@@ -168,80 +777,91 @@ x+=3
 print(x)
 </code></pre>
 <p><img alt="" src="../media/image6.png" /></p>
-<h2 id="3-numpy">3. NumPy 库安装</h2>
-<p>Python 本身功能强大，但它的更多能力来自于丰富的第三方库（也称为“包”），这些库需要额外安装。在 Lab 3 和 4 中，我们会用到 <code>numpy</code> 库。</p>
-<h3 id="a-numpy">a. 安装 NumPy</h3>
-<p>打开终端（<strong>一个新的终端窗口，或者已经关闭了Jupyter的终端</strong>），输入命令 <code>pip install numpy</code>。</p>
-<h3 id="b-numpy">b. 使用 NumPy</h3>
-<p>等待安装完毕。安装后，<strong>如果 Jupyter Notebook 已经在运行，你需要重启它的内核（Kernel -&gt; Restart）或完全退出 Jupyter 后重新启动</strong>，才能识别新安装的库。</p>
-<p>在 Jupyter Notebook 的单元格中，输入 <code>import numpy</code> 来引用这个库。NumPy 是 <strong>Numeric Python</strong> 的缩写，它可以帮助我们快速地进行数学运算。</p>
-<h3 id="c_1">c. 试试看！</h3>
-<p>我们来试试吧！在单元格中输入以下代码，然后按 <code>Shift + Enter</code> 运行：</p>
-<pre><code class="language-python">import numpy #引用numpy库
+<h2 id="3-numpy-library-installation">3. NumPy Library Installation</h2>
+<p>Python itself is powerful, but much of its strength comes from its many third-party libraries (also called "packages"), which need to be installed separately. In Labs 3 and 4, we will use the <code>numpy</code> library.</p>
+<h3 id="a-install-numpy">a. Install NumPy</h3>
+<p>Open a terminal (<strong>a new terminal window, or the one you used before if you have already closed Jupyter</strong>), and type the command <code>pip install numpy</code>.</p>
+<h3 id="b-use-numpy">b. Use NumPy</h3>
+<p>Wait for the installation to finish. After it's installed, <strong>if Jupyter Notebook is already running, you need to restart its kernel (Kernel -&gt; Restart) or completely exit and restart Jupyter</strong> to recognize the newly installed library.</p>
+<p>In a Jupyter Notebook cell, type <code>import numpy</code> to import the library. NumPy is short for <strong>Numeric Python</strong>, and it helps us perform mathematical calculations quickly.</p>
+<h3 id="c-try-it-out">c. Try it out!</h3>
+<p>Let's give it a try! Type the following code into a cell and press <code>Shift + Enter</code> to run it:</p>
+<pre><code class="language-python">import numpy # import the numpy library
 x = numpy.array([[1,2,3],[4,5,6],[7,8,9]]) # define a matrix
 print(x)
 
-y = x - 1 # minus 1 to all elements in this matrix
+y = x - 1 # subtract 1 from all elements in this matrix
 print(y)
 
 x_dot_y = numpy.matmul(x, y) # do dot multiplication
 print(x_dot_y)
 </code></pre>
 <p><img alt="" src="../media/image7.png" /></p>
-<h2 id="_1">拓展阅读</h2>
-<h3 id="a-path">拓展A：什么是 PATH？为什么要勾选？</h3>
-<p>PATH 可以理解为电脑的“程序通讯录”或“地址簿”。当我们不将 <code>python.exe</code> 加入 PATH 时，电脑就不知道去哪个文件夹找这个程序。当你在终端输入 <code>python</code> 时，电脑就会报错“找不到命令”。将它加入 PATH，就相当于把 Python 的地址告诉了电脑，这样你在终端的任何位置都能快速找到并运行它。</p>
-<h3 id="b-disable-path-length-limit">拓展B：为什么选择 disable path length limit？</h3>
-<p>老版本的 Windows 系统有一个限制：文件或文件夹的完整路径长度不能超过 260 个字符。在编程时，我们很容易创建出深层嵌套的文件夹（例如一些库的依赖文件），这可能会导致一些意想不到的 <code>FilePathTooLongException</code> 错误。选择禁用此限制可以一劳永逸地避免这类问题，是一个安全且推荐的操作。</p>
-<h3 id="cpip-install-notebook">拓展C：<code>pip install notebook</code> 命令什么意思？</h3>
-<p><code>pip</code> 是 Python 的<strong>包管理器</strong> (Package Manager)，你可以把它理解为一个“软件库”或“应用商店”。它的主要任务是从网上（主要是 PyPI，Python Package Index）下载、安装和管理第三方库（Package）。<code>pip install notebook</code> 的意思就是：指挥 <code>pip</code> 这个工具，去软件库中找到名为 <code>notebook</code> 的软件包，并把它下载和安装到你的电脑上。</p>
-<h3 id="d-kernel">拓展D：什么是 Kernel？</h3>
-<p><strong>内核 (Kernel)</strong> 是 Jupyter Notebook 背后真正运行代码的“引擎”或“大脑”。
--   <strong>前端 (Frontend):</strong> 你看到的浏览器界面，负责显示代码和结果，并接收你的输入。
--   <strong>内核 (Kernel):</strong> 负责接收前端的代码，执行计算，并将结果返回给前端显示。</p>
-<p>选择不同的内核（如 Python、R、Julia）就意味着用不同的编程语言来解释和执行单元格中的代码。我们选择 <code>Python 3 (ipykernel)</code>，就是告诉 Jupyter 使用 Python 来作为执行引擎。</p>
-              
+<h2 id="appendices">Appendices</h2>
+<h3 id="appendix-a-what-is-path-why-check-the-box">Appendix A: What is PATH? Why check the box?</h3>
+<p>You can think of the PATH as your computer's "contact list" or "address book" for programs. If we don't add <code>python.exe</code> to the PATH, the computer doesn't know which folder to look in to find it. When you type <code>python</code> in the terminal, the computer will give a "command not found" error. Adding it to the PATH is like telling the computer Python's address, so you can quickly find and run it from any location in the terminal.</p>
+<h3 id="appendix-b-why-choose-to-disable-the-path-length-limit">Appendix B: Why choose to disable the path length limit?</h3>
+<p>Older versions of Windows have a limit: the full path to a file or folder cannot be longer than 260 characters. When programming, it's easy to create deeply nested folders (for example, for library dependency files), which can cause unexpected <code>FilePathTooLongException</code> errors. Disabling this limit is a safe and recommended action that prevents this kind of problem permanently.</p>
+<h3 id="appendix-c-what-does-the-pip-install-notebook-command-mean">Appendix C: What does the <code>pip install notebook</code> command mean?</h3>
+<p><code>pip</code> is Python's <strong>package manager</strong>. You can think of it as a "software library" or "app store." Its main job is to download, install, and manage third-party libraries (packages) from the internet (mainly from PyPI, the Python Package Index). The command <code>pip install notebook</code> means: tell the <code>pip</code> tool to find the package named <code>notebook</code> in the software library, and then download and install it on your computer.</p>
+<h3 id="appendix-d-what-is-a-kernel">Appendix D: What is a Kernel?</h3>
+<p>The <strong>Kernel</strong> is the "engine" or "brain" that actually runs the code behind the scenes in a Jupyter Notebook.
+-   <strong>Frontend:</strong> The browser interface you see, which displays code and results, and receives your input.
+-   <strong>Kernel:</strong> It receives the code from the frontend, performs the calculations, and sends the results back to the frontend to be displayed.</p>
+<p>Choosing different kernels (like Python, R, or Julia) means you are using different programming languages to interpret and run the code in the cells. When we choose <code>Python 3 (ipykernel)</code>, we are telling Jupyter to use Python as its execution engine.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Optional/" class="btn btn-neutral float-left" title="Anaconda and VSCode 安装指南"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
           
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href="../Optional/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-  </span>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
 </html>
