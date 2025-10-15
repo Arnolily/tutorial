@@ -46,7 +46,7 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Anaconda and VSCode 安装指南</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#anaconda-tutorial">Anaconda Tutorial</a>
+    <li class="toctree-l2"><a class="reference internal" href="#1-anaconda-tutorial">1. Anaconda Tutorial</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#a-anaconda">a. 安装 Anaconda</a>
     </li>
@@ -56,7 +56,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#vscode-tutorial">VSCode Tutorial</a>
+    <li class="toctree-l2"><a class="reference internal" href="#2-vscode-tutorial">2. VSCode Tutorial</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#a-vscode-python">a. 安装 VSCode 和 Python 扩展</a>
     </li>
@@ -104,7 +104,7 @@
 <p><strong>VSCode 部分</strong>：介绍如何在 VSCode IDE 中运行和调试 Jupyter Notebook。</p>
 </li>
 </ul>
-<h2 id="anaconda-tutorial">Anaconda Tutorial</h2>
+<h2 id="1-anaconda-tutorial">1. Anaconda Tutorial</h2>
 <p>Anaconda 是一个专为 Python 和数据科学打造的强大平台，其核心是 <strong>Conda</strong> 环境与包管理系统。Python 的强大离不开丰富的第三方库，但由于这些库由不同的团队独立维护，它们之间的版本依赖往往错综复杂。例如，特定版本的 PyTorch 可能依赖特定版本的 NumPy。若将这些版本不兼容的库安装在同一环境中，极易引发难以调试的依赖冲突和运行时错误。</p>
 <p>Anaconda 通过<strong>虚拟环境</strong>解决了这一问题。你可以为每个项目创建一个个完全隔离的独立环境，每个环境都拥有自己独立的 Python 解释器、包安装目录和依赖库集合。环境之间互不干扰。例如，你可以为数据可视化项目创建一个包含 Matplotlib 和 Seaborn 的环境，同时为深度学习项目创建另一个仅安装 PyTorch 的干净环境。这种方式既确保了每个项目依赖项的精确性和纯净性，也从根本上杜绝了项目之间的环境冲突。</p>
 <h3 id="a-anaconda">a. 安装 Anaconda</h3>
@@ -122,15 +122,15 @@
 <ol>
 <li>在 <code>Anaconda Prompt</code> 中，直接输入以下命令：</li>
 </ol>
-<p><code>bash
-   conda init</code></p>
+<pre><code>conda init
+</code></pre>
 <p>这个命令会<strong>自动检测</strong>你的系统设置并完成初始化。完成后，<strong>关闭你当前打开的所有终端窗口</strong>（包括这个 Anaconda Prompt）。</p>
 <ol>
-<li>
-<p>在 <code>Anaconda Prompt</code> 中，使用以下命令创建新环境：</p>
-<p><code>bash
-conda create --name your_env_name</code></p>
-</li>
+<li>在 <code>Anaconda Prompt</code> 中，使用以下命令创建新环境：</li>
+</ol>
+<pre><code>conda create --name your_env_name
+</code></pre>
+<ol>
 <li>
 <p>请将 your_env_name 替换为你喜欢的任意环境名称（例如：conda create --name arnold）。</p>
 </li>
@@ -144,7 +144,7 @@ conda create --name your_env_name</code></p>
 <h3 id="c-python">c. 在环境中安装 Python 和所需库</h3>
 <p>首先，必须激活你的新环境，否则后续安装的包将会被安装到默认的 (base) 环境中，从而失去使用独立环境的意义。</p>
 <p>使用以下命令激活环境：</p>
-<pre><code class="language-bash">conda activate your_env_name
+<pre><code>conda activate your_env_name
 </code></pre>
 <p>激活后，请注意观察命令行提示符的开头，此时应显示你当前所在环境的名称（在本教程示例中为 (arnold)）。</p>
 <p><img alt="image-20250914214433148" src="..\media\image-20250914214433148.png" /></p>
@@ -156,7 +156,7 @@ conda create --name your_env_name</code></p>
 <p><strong>请安装 Jupyter Notebook：</strong></p>
 <pre><code class="language-bash">pip install notebook
 </code></pre>
-<h2 id="vscode-tutorial">VSCode Tutorial</h2>
+<h2 id="2-vscode-tutorial">2. VSCode Tutorial</h2>
 <p>还记得IP课程用到的Dev C++吗？Visual Studio Code (VSCode) 比他强百倍。对于 Python 和 Jupyter Notebook 开发而言，VSCode 提供了出色的编辑、运行和调试体验，能够在一个统一的界面中高效地管理你的代码、环境和项目。</p>
 <h3 id="a-vscode-python">a. 安装 VSCode 和 Python 扩展</h3>
 <ol>

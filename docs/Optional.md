@@ -6,7 +6,7 @@
 
 -   **VSCode 部分**：介绍如何在 VSCode IDE 中运行和调试 Jupyter Notebook。
 
-## Anaconda Tutorial
+## 1. Anaconda Tutorial
 
 Anaconda 是一个专为 Python 和数据科学打造的强大平台，其核心是 **Conda** 环境与包管理系统。Python 的强大离不开丰富的第三方库，但由于这些库由不同的团队独立维护，它们之间的版本依赖往往错综复杂。例如，特定版本的 PyTorch 可能依赖特定版本的 NumPy。若将这些版本不兼容的库安装在同一环境中，极易引发难以调试的依赖冲突和运行时错误。
 
@@ -27,18 +27,17 @@ Anaconda 通过**虚拟环境**解决了这一问题。你可以为每个项目�
 ![Anaconda Prompt](../media/image-20250914213721571.png)
 
 2. 在 `Anaconda Prompt` 中，直接输入以下命令：
-
-   ```bash
-   conda init
-   ```
+```
+conda init
+```
 
    这个命令会**自动检测**你的系统设置并完成初始化。完成后，**关闭你当前打开的所有终端窗口**（包括这个 Anaconda Prompt）。
 
 3. 在 `Anaconda Prompt` 中，使用以下命令创建新环境：
 
-    ```bash
-    conda create --name your_env_name
-    ```
+```
+conda create --name your_env_name
+```
 
 4. 请将 your_env_name 替换为你喜欢的任意环境名称（例如：conda create --name arnold）。
 
@@ -50,8 +49,7 @@ Anaconda 通过**虚拟环境**解决了这一问题。你可以为每个项目�
 首先，必须激活你的新环境，否则后续安装的包将会被安装到默认的 (base) 环境中，从而失去使用独立环境的意义。
 
 使用以下命令激活环境：
-
-```bash
+```
 conda activate your_env_name
 ```
 
@@ -75,7 +73,7 @@ pip install notebook
 ```
 
 
-## VSCode Tutorial
+## 2. VSCode Tutorial
 
 还记得IP课程用到的Dev C++吗？Visual Studio Code (VSCode) 比他强百倍。对于 Python 和 Jupyter Notebook 开发而言，VSCode 提供了出色的编辑、运行和调试体验，能够在一个统一的界面中高效地管理你的代码、环境和项目。
 

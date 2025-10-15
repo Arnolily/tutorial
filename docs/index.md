@@ -12,7 +12,7 @@
 
 ## 路线二：专业高效（推荐给希望深入学习的同学）
 
-- **选择**：[Anaconda and VSCode 安装指南](./Optional.md) 教程中的 Anaconda 部分 + VSCode 部分
+- **选择**：[Anaconda and VSCode 安装指南](./Optional.md)
 - **特点**：使用 Anaconda 创建独立的虚拟环境，为每个项目提供干净、隔离的空间，彻底解决依赖冲突。配合 VSCode 获得最好的编写和调试体验。
 - **缺点**：初始设置稍复杂，需要理解"环境"的概念。
 
