@@ -1,3 +1,39 @@
 site_name: Tutorial For UESTC3036
+
 theme:
-  name: readthedocs
+  name: material
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+
+plugins:
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+          nav:
+            - Home: index.md
+            - Python and Jupyter Notebook Installation Guide: Python and Jupyter Notebook 安装指南.md
+            - Anaconda and VSCode Installation Guide: Optional.md
+            - Extra Resources: Extra.md
+        - locale: zh
+          name: 中文
+          build: true
+          nav:
+            - 首页: index.md
+            - Python and Jupyter Notebook 安装指南: Python and Jupyter Notebook 安装指南.md
+            - Anaconda and VSCode 安装指南: Optional.md
+            - 额外资源: Extra.md
