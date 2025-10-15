@@ -1,4 +1,6 @@
 site_name: Tutorial For UESTC3036
+site_url: https://zhangjiayuan.me/tutorial_UESTC3036/
+use_directory_urls: true
 
 theme:
   name: material
@@ -6,15 +8,6 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.expand
-
-extra:
-  alternate:
-    - name: English
-      link: /
-      lang: en
-    - name: 中文
-      link: /zh/
-      lang: zh
 
 plugins:
   - i18n:

@@ -1,6 +1,8 @@
 # Introduction
 
-Hello students, this is a tutorial for the UESTC3036 course (AI & ML). In this tutorial, we will guide you through installing the programming tools needed for Lab 3 and Lab 4.
+***This tutorial was originally written in Chinese because, well, we're teaching Chinese students in China. However, there are certain requirements that demands English documentation, so here we are. If reading LLM-translated technical instructions sounds painful, click the top right button to switch to Chinese.***
+
+Hi everyone, this is a tutorial for the UESTC3036 course (AI & ML). In this tutorial, we will guide you through installing the programming tools needed for Lab 3 and Lab 4.
 
 Before you start, please read the following and choose the installation method that works best for you:
 
