@@ -43,6 +43,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">前言</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Extra/">拓展阅读</a>
+                </li>
+              </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Anaconda and VSCode 安装指南</a>
     <ul class="current">
@@ -147,14 +151,14 @@
 <pre><code>conda activate your_env_name
 </code></pre>
 <p>激活后，请注意观察命令行提示符的开头，此时应显示你当前所在环境的名称（在本教程示例中为 (arnold)）。</p>
-<p><img alt="image-20250914214433148" src="..\media\image-20250914214433148.png" /></p>
+<p><img alt="image-20250914214433148" src="../media/image-20250914214433148.png" /></p>
 <p>新创建的环境初始为空。接下来，为你的项目安装特定版本的 Python：</p>
-<pre><code class="language-bash">conda install python
+<pre><code>conda install python
 </code></pre>
 <p>你也可以通过 <code>conda install python=3.11</code> 这样的命令来安装指定版本（将 3.11 替换为你需要的版本号）。</p>
 <p>Python 安装完成后，你就可以像之前一样，使用 <code>pip install [package_name]</code> 在该环境中安装项目所需的所有第三方库了。所有这些库都将被隔离在此环境内部。<strong>请注意：</strong>即使同学们之前安装过python，我们仍然需要再次在新的环境中安装，因为新创建环境之后这个环境中是什么都没有的。</p>
 <p><strong>请安装 Jupyter Notebook：</strong></p>
-<pre><code class="language-bash">pip install notebook
+<pre><code>pip install notebook
 </code></pre>
 <h2 id="2-vscode-tutorial">2. VSCode Tutorial</h2>
 <p>还记得IP课程用到的Dev C++吗？Visual Studio Code (VSCode) 比他强百倍。对于 Python 和 Jupyter Notebook 开发而言，VSCode 提供了出色的编辑、运行和调试体验，能够在一个统一的界面中高效地管理你的代码、环境和项目。</p>
@@ -175,15 +179,15 @@
 </ul>
 </li>
 </ol>
-<p><img alt="image-20250914222826984" src="..\media\image-20250914222826984.png" /></p>
+<p><img alt="image-20250914222826984" src="../media/image-20250914222826984.png" /></p>
 <h3 id="b-vscodejupyter-notebook">b. 在vscode中使用Jupyter notebook</h3>
 <p>为了让 VSCode 正确使用你创建的 Anaconda 环境，你需要为其设置正确的 Python 解释器。</p>
 <ol>
 <li>创建新的jupyter notebook文件（文件名以.ipynb结尾）。</li>
 <li>点击右上角<code>Select Kernel</code>，然后点击<code>Select Python Environment</code>，选择我们刚创建好的环境。我们可以看到，使用Anaconda创建的环境会被标注为<code>Conda Env</code>，而如果不使用Anaconda，而是直接安装python和库的话，会被标注为<code>Global Env</code>。如果大家跟着基础教程走，而没有安装Anaconda，则选择<code>Global Env</code>。<strong>注：</strong>Kernel 就是运行代码的引擎，这里我们要选择刚刚在 Anaconda 里创建好的那个环境作为引擎。</li>
 </ol>
-<p><img alt="image-20250914223213296" src="..\media\image-20250914223213296.png" />
-<img alt="image-20250914223709420" src="..\media\image-20250914223709420.png" /></p>
+<p><img alt="image-20250914223213296" src="../media/image-20250914223213296.png" />
+<img alt="image-20250914223709420" src="../media/image-20250914223709420.png" /></p>
 <ol>
 <li>
 <p>选择完Kernel之后，Jupyter就知道你在写的是Python语言了，语法高亮就会显示出来了。</p>
@@ -192,12 +196,12 @@
 <p>现在，你就可以在代码单元（Cell）中编写代码了。将光标置于某个 Cell 中，点击左侧的 <strong>运行</strong> 三角图标。运行结果会直接显示在 Cell 下方。</p>
 </li>
 </ol>
-<p><img alt="image-20250914224246827" src="..\media\image-20250914224246827.png" /></p>
+<p><img alt="image-20250914224246827" src="../media/image-20250914224246827.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="前言"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Extra/" class="btn btn-neutral float-left" title="拓展阅读"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/" class="btn btn-neutral float-right" title="Python and Jupyter Notebook 安装指南">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -221,7 +225,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../Extra/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../Python%20and%20Jupyter%20Notebook%20%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/" style="color: #fcfcfc">Next &raquo;</a></span>
