@@ -9,3 +9,4 @@
 5. [Use GitHub Copilot in VSCode](https://www.youtube.com/watch?v=vdBxfFVXnc0)
 6. [Many educational materials for Computer Science](https://csdiy.wiki)
 
+如果你对这个tutorial有任何意见或者建议，亦或者你想要为维护这个文档做出贡献，我们都非常的欢迎。请联系[xm24@uestc.edu.cn](mailto:xm24@uestc.edu.cn)或者[jiayuan.zhang@std.uestc.edu.cn](mailto:jiayuan.zhang@std.uestc.edu.cn)。

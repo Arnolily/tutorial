@@ -9,3 +9,4 @@ It's better to learn *how* to do something than to just be given the answer. The
 5. [Use GitHub Copilot in VSCode](https://www.youtube.com/watch?v=vdBxfFVXnc0)
 6. [Many educational materials for Computer Science](https://csdiy.wiki)
 
+If you have any comments or suggestions about this tutorial, or if you would like to contribute to maintaining this document, we warmly welcome your input. Please contact [xm24@uestc.edu.cn](mailto:xm24@uestc.edu.cn) or [jiayuan.zhang@std.uestc.edu.cn](mailto:jiayuan.zhang@std.uestc.edu.cn).
