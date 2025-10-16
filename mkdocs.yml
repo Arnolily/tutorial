@@ -4,10 +4,23 @@ use_directory_urls: true
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tracking
     - navigation.sections
     - navigation.expand
+
+extra:
+  alternate:
+    - name: English
+      link: ./
+      lang: en
+    - name: 中文
+      link: ./zh/
+      lang: zh
+
+extra_javascript:
+  - https://clustrmaps.com/map_v2.js?d=vRA0B8XHPcmOncncnwKJohPcK3WO90mIf8LRBeg8acY&cl=ffffff&w=a
 
 plugins:
   - i18n:
