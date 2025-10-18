@@ -66,10 +66,10 @@ conda install python
 
 Python 安装完成后，你就可以像之前一样，使用 `pip install [package_name]` 在该环境中安装项目所需的所有第三方库了。所有这些库都将被隔离在此环境内部。**请注意：**即使同学们之前安装过python，我们仍然需要再次在新的环境中安装，因为新创建环境之后这个环境中是什么都没有的。
 
-**请安装 Jupyter Notebook：**
+**请安装 Jupyter Notebook 和其他所需要的库：**
 
 ```
-pip install notebook
+pip install notebook numpy pandas matplotlib scikit-learn
 ```
 
 

@@ -66,10 +66,10 @@ You can also install a specific version with a command like `conda install pytho
 
 Once Python is installed, you can use `pip install [package_name]` just like before to install all the third-party libraries your project needs in this environment. All these libraries will be isolated within this environment. **Please note:** Even if you have installed Python before, you still need to install it again in the new environment, because a newly created environment is completely empty.
 
-**Please install Jupyter Notebook:**
+**Please install Jupyter Notebook and other required packages:**
 
 ```
-pip install notebook
+pip install notebook numpy pandas matplotlib scikit-learn
 ```
 
 

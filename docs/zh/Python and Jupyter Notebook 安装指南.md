@@ -93,6 +93,27 @@ print(x_dot_y)
 
 ![](./media/image7.png)
 
+#### d. 其他必需库的安装
+除了 NumPy，Lab 3 和 Lab 4 还需要以下三个库：
+- **pandas**: 用于数据处理和分析
+- **matplotlib**: 用于数据可视化和绘图
+- **sklearn** (scikit-learn): 用于机器学习算法
+
+在终端中依次执行以下命令来安装这些库：
+
+```bash
+pip install pandas
+pip install matplotlib
+pip install scikit-learn
+```
+
+**提示：** 你也可以一次性安装所有库，只需执行：
+```bash
+pip install pandas matplotlib scikit-learn
+```
+
+安装完成后，记得在 Jupyter Notebook 中**重启内核（Kernel -> Restart）**，新安装的库才能被识别和使用。
+
 ## 拓展阅读
 
 ### 拓展A：什么是 PATH？为什么要勾选？
