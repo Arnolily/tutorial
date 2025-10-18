@@ -93,7 +93,7 @@ print(x_dot_y)
 
 ![](./media/image7.png)
 
-#### d. 其他必需库的安装
+### d. 其他必需库的安装
 除了 NumPy，Lab 3 和 Lab 4 还需要以下三个库：
 - **pandas**: 用于数据处理和分析
 - **matplotlib**: 用于数据可视化和绘图

@@ -93,7 +93,7 @@ print(x_dot_y)
 
 ![](./media/image7.png)
 
-#### d. Installing Other Required Libraries
+### d. Installing Other Required Libraries
 In addition to NumPy, Labs 3 and 4 require the following three libraries:
 - **pandas**: Used for data processing and analysis
 - **matplotlib**: Used for data visualization and plotting
